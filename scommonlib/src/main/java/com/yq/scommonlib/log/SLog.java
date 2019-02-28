@@ -72,9 +72,19 @@ public class SLog {
         }
     }
 
+
     private static String getTargetStackTraceTag() {
         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
-        return "ddd";
+        String tagSt = "SLog---->";
+        if (stackTrace.length >= 2) {
+            String tag = "%s.%s(--Lines:%d--)";
+            StackTraceElement stackTraceElement = stackTrace[2];
+            String className = stackTraceElement.getClassName();
+            String methodName = stackTraceElement.getMethodName();
+            int lineNumber = stackTraceElement.getLineNumber();
+            tagSt = tagSt + String.format(tag, className.substring(className.lastIndexOf(".") + 1), methodName, lineNumber);
+        }
+        return tagSt;
     }
 
 
