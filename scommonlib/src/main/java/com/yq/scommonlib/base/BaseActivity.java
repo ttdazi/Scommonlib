@@ -17,6 +17,6 @@ public abstract class BaseActivity extends AutoLayoutActivity {
 
     protected void onDestroy() {
         super.onDestroy();
-        ActivityManager.getInstance().finishActivity(this);
+        ActivityManager.getInstance().removeActivity(this);
     }
 }

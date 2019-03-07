@@ -1,15 +1,13 @@
 package com.yq.scommonlib.manager;
 
 import android.app.Activity;
+
 import com.yq.scommonlib.log.SLog;
 
 import java.util.Iterator;
 import java.util.Stack;
 
-/**
- * author: Y_Qing
- * date: 2019/2/16
- */
+
 public class ActivityManager {
     private static Stack<Activity> activityStack;
 
@@ -32,15 +30,10 @@ public class ActivityManager {
         return activityStack.lastElement();
     }
 
-    public void finishActivity() {
-        Activity activity = activityStack.lastElement();
-        finishActivity(activity);
-    }
 
-    public void finishActivity(Activity activity) {
+    public void removeActivity(Activity activity) {
         if (activity != null) {
             activityStack.remove(activity);
-            activity.finish();
         }
     }
 
@@ -53,8 +46,7 @@ public class ActivityManager {
             }
             activity = (Activity) var2.next();
         } while (!activity.getClass().equals(cls));
-
-        this.finishActivity(activity);
+        activity.finish();
     }
 
     public void finishAllActivity() {
