@@ -1,4 +1,4 @@
-package com.yq.scommonlib.utils;
+package com.aidazi.scommonlib.utils;
 
 import android.content.Context;
 

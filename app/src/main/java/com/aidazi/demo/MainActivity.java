@@ -1,9 +1,9 @@
-package com.yq.demo;
+package com.aidazi.demo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.yq.scommonlib.log.SLog;
+import com.aidazi.scommonlib.log.SLog;
 
 public class MainActivity extends AppCompatActivity {
 

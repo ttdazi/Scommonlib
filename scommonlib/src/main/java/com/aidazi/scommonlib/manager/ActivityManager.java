@@ -1,8 +1,8 @@
-package com.yq.scommonlib.manager;
+package com.aidazi.scommonlib.manager;
 
 import android.app.Activity;
 
-import com.yq.scommonlib.log.SLog;
+import com.aidazi.scommonlib.log.SLog;
 
 import java.util.Iterator;
 import java.util.Stack;

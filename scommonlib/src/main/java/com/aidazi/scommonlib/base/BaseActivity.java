@@ -1,7 +1,7 @@
-package com.yq.scommonlib.base;
+package com.aidazi.scommonlib.base;
 
 import android.os.Bundle;
-import com.yq.scommonlib.manager.ActivityManager;
+import com.aidazi.scommonlib.manager.ActivityManager;
 import com.zhy.autolayout.AutoLayoutActivity;
 
 /**
@@ -16,7 +16,7 @@ public abstract class BaseActivity extends AutoLayoutActivity {
     }
 
     protected void onDestroy() {
-        super.onDestroy();
         ActivityManager.getInstance().removeActivity(this);
+        super.onDestroy();
     }
 }

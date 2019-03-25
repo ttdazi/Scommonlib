@@ -1,10 +1,10 @@
-package com.yq.scommonlib.utils;
+package com.aidazi.scommonlib.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
-import com.yq.scommonlib.log.SLog;
+import com.aidazi.scommonlib.log.SLog;
 
 /**
  * author: Y_Qing

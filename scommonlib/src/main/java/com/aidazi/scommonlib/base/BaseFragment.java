@@ -1,4 +1,4 @@
-package com.yq.scommonlib.base;
+package com.aidazi.scommonlib.base;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;

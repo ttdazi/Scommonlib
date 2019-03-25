@@ -1,4 +1,4 @@
-package com.yq.scommonlib.log;
+package com.aidazi.scommonlib.log;
 
 
 import android.util.Log;
