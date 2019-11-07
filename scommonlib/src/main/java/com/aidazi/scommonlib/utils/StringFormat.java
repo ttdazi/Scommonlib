@@ -16,4 +16,7 @@ public class StringFormat {
         DecimalFormat df = new DecimalFormat("#.00");
         return df.format(flatValue);
     }
+    public static String phone2Format(String phone) {
+        return phone.replaceAll("(\\d{3})\\d{4}(\\d{4})", "$1****$2");
+    }
 }
