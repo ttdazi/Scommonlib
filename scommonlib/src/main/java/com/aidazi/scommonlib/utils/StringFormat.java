@@ -8,8 +8,9 @@ import java.text.DecimalFormat;
  */
 public class StringFormat {
 
+
     public static String float2String(float flatValue) {
-        return String.format("可提现%.2f千", flatValue);
+        return String.format("%.2f", flatValue);
     }
 
     public static String decimalFloat2String(float flatValue) {
